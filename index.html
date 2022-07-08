@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resete.css">
+    <title>Todoist</title>
+</head>
+<body>
+    <div class="container">
+        <div class="topo">
+            <div class="dia-mes">
+                <span class="DIA">24</span>
+                <div class="mes">
+                    <span class="nome-mes">JAN</span>
+                    <span class="ano">2021</span>
+                </div>
+            </div>
+
+            <span class="titulo">Todoist</span>
+
+            <div class="diaSemana">Segunda-feira</div>
+        </div>
+
+        <section>
+            <div class="enviarTxt">
+                <input class="inputTxt" type="text" placeholder="Comprar ração para o gato..." >
+                <button class="adicionar" onclick="adicionarTarefa()">+</button>
+            </div>
+
+            <ul class="lista">
+                <li class="tarefa">
+                    <input type="checkbox" class="riscar">
+                    <span class="textoDoInput"> kodksojidsjidjsidaiasjidjasijdisajdijaidjsiajdiasijdisajiji</span>
+                    <button class="apagar" onclick="apagar(this)">x</button>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
