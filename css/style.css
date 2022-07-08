@@ -161,9 +161,10 @@ textarea:focus, input:focus {
     position:relative;
     margin-bottom:20px;
 }
+  
 
 .textoDoInput{
-    margin-left: 2px;
+    margin-left: 10px;
     max-width: 80%;
     word-wrap:break-word;
     font-family: 'Inter';
@@ -195,7 +196,15 @@ textarea:focus, input:focus {
     color: #ADADAD;;
 }
 
-.riscar:checked{
-    background-color: #933FFF;
+.riscar{
+    width: 15px;
+    color:#ADADAD;
+    border-radius: 3px;
+    height: 15px;
+    border: solid 1px #ADADAD;
 }
 
+.clicado{
+    background-color: #933fff;
+    color:black;
+}
