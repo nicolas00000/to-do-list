@@ -44,3 +44,39 @@ function riscarMSG(elemento){
      click.classList.toggle("clicado")
 
 }
+
+dataAtual()
+function dataAtual(){
+    const data = new Date()
+    const d = String(data.getDate()).padStart(2, "0") //1 -> 01
+    const m = data.getMonth() // jan = 0
+    const a = data.getFullYear()
+    const semana = data.getDay()
+
+    const dia  = document.querySelector(".DIA") 
+    dia.innerHTML = d
+
+    const mes = document.querySelector(".nome-mes")
+
+    const ano = document.querySelector(".ano")
+    ano.innerHTML = a
+
+    const diaSemana = document.querySelector(".diaSemana")
+    const s = ["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"]
+
+
+    for(let i = 0 ; i < s.length;  i++){
+        if(semana === i){
+            diaSemana.innerHTML = s[i]
+        }
+    }
+
+    const anoatual = ["JAN","FEV","MAR","ABR","MAI","JUN","JUL","AGO","SET","OUT","NOV","DEZ"] 
+    for(let i = 0 ; i < anoatual.length;  i++){
+        if(m === i){
+            mes.innerHTML = anoatual[i]
+        }
+    }
+
+
+}
