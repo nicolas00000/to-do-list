@@ -71,10 +71,10 @@ function dataAtual(){
         }
     }
 
-    const anoatual = ["JAN","FEV","MAR","ABR","MAI","JUN","JUL","AGO","SET","OUT","NOV","DEZ"] 
-    for(let i = 0 ; i < anoatual.length;  i++){
+    const mesAtual = ["JAN","FEV","MAR","ABR","MAI","JUN","JUL","AGO","SET","OUT","NOV","DEZ"] 
+    for(let i = 0 ; i < mesAtual.length;  i++){
         if(m === i){
-            mes.innerHTML = anoatual[i]
+            mes.innerHTML = mesAtual[i]
         }
     }
 
