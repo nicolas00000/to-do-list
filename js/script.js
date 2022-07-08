@@ -4,7 +4,7 @@ document.onkeydown = teclado
 // disparar funcao de adicionar tarefa a partir da tecla enter do teclado
 function teclado(e){
     if(e.keyCode===13){
-        adicionarTarefa()
+        adicionarTarefa()    
     }
 }
 // adiciona um li no ul (lista)
